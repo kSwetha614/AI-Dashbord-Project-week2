@@ -1,0 +1,11 @@
+st.subheader("Top Venues")
+
+venue_count = filtered_df["venue"].value_counts().head(10)
+
+fig = px.bar(
+    x=venue_count.index,
+    y=venue_count.values,
+    labels={"x":"Venue","y":"Matches"}
+)
+
+st.plotly_chart(fig)
