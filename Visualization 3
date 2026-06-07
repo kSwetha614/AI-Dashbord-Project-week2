@@ -1,0 +1,9 @@
+st.subheader("Toss Decisions")
+
+fig = px.pie(
+    filtered_df,
+    names="toss_decision",
+    title="Bat vs Field"
+)
+
+st.plotly_chart(fig)
