@@ -1,9 +1,0 @@
-st.sidebar.header("Filters")
-
-season = st.sidebar.multiselect(
-    "Select Season",
-    df["season"].unique(),
-    default=df["season"].unique()
-)
-
-filtered_df = df[df["season"].isin(season)]
