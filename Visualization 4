@@ -1,0 +1,10 @@
+st.subheader("Win Margin Distribution")
+
+fig = px.histogram(
+    filtered_df,
+    x="win_by_runs",
+    nbins=20,
+    title="Distribution of Win Margins"
+)
+
+st.plotly_chart(fig)
