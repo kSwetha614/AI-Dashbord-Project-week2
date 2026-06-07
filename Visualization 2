@@ -1,0 +1,14 @@
+st.subheader("Winning Teams")
+
+winner_count = filtered_df["winner"].value_counts().reset_index()
+
+winner_count.columns = ["Team", "Wins"]
+
+fig = px.bar(
+    winner_count,
+    x="Team",
+    y="Wins",
+    title="Team Wins"
+)
+
+st.plotly_chart(fig)
