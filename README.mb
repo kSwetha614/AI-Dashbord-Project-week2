@@ -1,0 +1,16 @@
+IPL AI Dashboard
+
+Overview
+Interactive dashboard for IPL match analysis. Features
+- Dataset Overview
+- Data Cleaning
+- KPIs
+- Interactive Filters
+- Visualizations
+
+Technologies
+- Python
+- Pandas
+- Plotly
+- Streamlit Run
+streamlit run app.py
