@@ -1,0 +1,12 @@
+st.subheader("Matches Per Season")
+
+season_count = filtered_df.groupby("season").size().reset_index(name="Matches")
+
+fig = px.bar(
+    season_count,
+    x="season",
+    y="Matches",
+    title="Matches Played Each Season"
+)
+
+st.plotly_chart(fig)
