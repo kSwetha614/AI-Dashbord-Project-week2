@@ -1,0 +1,15 @@
+st.header("Key Metrics")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric("Total Matches", filtered_df.shape[0])
+
+with col2:
+    st.metric("Teams", filtered_df["team1"].nunique())
+
+with col3:
+    st.metric("Venues", filtered_df["venue"].nunique())
+
+with col4:
+    st.metric("Seasons", filtered_df["season"].nunique())
