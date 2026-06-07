@@ -1,0 +1,6 @@
+st.header("Dataset Overview")
+
+st.write("Rows and Columns:", df.shape)
+
+if st.checkbox("Show Dataset"):
+    st.dataframe(df.head())
